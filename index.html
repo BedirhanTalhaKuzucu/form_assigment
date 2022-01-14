@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Exercises</title>
+</head>
+<body style="background-color: rgb(204, 255, 153);">
+
+    <div style="margin: 100px; margin-right: 150px; margin-left: 150px;">
+    
+    <fieldset  style="border: double;  background: #0F6">
+    <legend style="text-align: center; font-size: 24px;">USER FORM</legend>
+        <form action="./result.html">
+            <br><br>
+            <div style="width:30%; padding: auto; float: left;">
+                <p> <li>First name</li> </p> 
+                <p> <li>Password</li> </p> 
+                <p> <li>Gender</li> </p> 
+                <p> <li>Address</li> </p> 
+                <p style="height:60px;"> <li>D.O.B</li> </p> 
+                <p> <li>Select Games </li> </p> 
+                <p><li>How Much Do You Live?</li></p>
+                <p> <li>Marital status</li> </p> 
+            </div>
+
+            <div style="float: left; padding: auto;">  
+               <p> <input type="text" name="name" id="isim"> </p> 
+               <p> <input type="password" name="psw" id="password"></p>
+               <p> 
+                   <input type="radio" name="gender" id="e">
+                   <label for="e"Erkek>Erkek</label>
+
+                   <input type="radio" name="gender" id="k">
+                   <label for="k">Kadın</label>
+                </p>
+                <p>
+                    <textarea name="adress" id="adres" cols="30" rows="5"></textarea>
+                </p>
+                <p><input type="date" name="dogum" id="geburts" value="2018-07-21" min="1990-04-20" max="2025-05-30"> </p>
+                <p><input type="checkbox" name="Hockey"> Hockey
+                    <input type="checkbox" name="Football">Football
+                    <input type="checkbox" name="Cricket"> Cricket
+                    <input type="checkbox" name="Volleyball">VolleyBall
+                </p>
+                <p>
+                    <input type="range" name="miktar" id="love" min="0" max="100">
+                </p>
+
+                <p><input type="radio" name="status" id="m">
+                    <label for="m">Maried</label>
+
+                    <input type="radio" name="status" id="u">
+                    <label for="u">Unmaried</label>
+                </p>
+
+                <p><input type="submit" value="Submit"> <input type="reset"></p>
+
+                <p><input type="radio" name="onay" id="i" required>
+                    <label for="i">I accept this agrement</label>
+                </p>
+
+
+            </div>
+
+
+    </form>
+
+    </fieldset>     
+    </div>
+</body>
+</html>
